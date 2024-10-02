@@ -1,5 +1,3 @@
-#if defined(CONFIG_BT_BLE_ENABLED)
-
 #include "BleConnectionStatus.h"
 
 BleConnectionStatus::BleConnectionStatus(void) {
@@ -20,4 +18,3 @@ void BleConnectionStatus::onDisconnect(BLEServer* pServer)
   BLEAdvertising *pAdvertising = pServer->getAdvertising();
   pAdvertising->start();
 }
-#endif

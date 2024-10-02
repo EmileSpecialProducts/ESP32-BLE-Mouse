@@ -1,4 +1,3 @@
-#if defined(CONFIG_BT_BLE_ENABLED)
 #include <BLEDevice.h>
 #include <BLEUtils.h>
 #include <BLEServer.h>
@@ -172,4 +171,3 @@ void BleMouse::taskServer(void* pvParameter) {
   ESP_LOGD(LOG_TAG, "Advertising started!");
   vTaskDelay(portMAX_DELAY); //delay(portMAX_DELAY);
 }
-#endif

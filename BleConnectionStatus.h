@@ -1,4 +1,3 @@
-#if defined(CONFIG_BT_BLE_ENABLED)
 #ifndef ESP32_BLE_CONNECTION_STATUS_H
 #define ESP32_BLE_CONNECTION_STATUS_H
 #include "sdkconfig.h"
@@ -20,4 +19,3 @@ public:
 
 #endif // CONFIG_BT_ENABLED
 #endif // ESP32_BLE_CONNECTION_STATUS_H
-#endif
