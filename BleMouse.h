@@ -3,8 +3,11 @@
 #include "sdkconfig.h"
 #if defined(CONFIG_BT_ENABLED)
 
+#if ESP_ARDUINO_VERSION_MAJOR <= 2
+//Not compatibil on ardrino 3.x
 #include "class/hid/hid.h"
 #include "class/hid/hid_device.h"
+#endif
 
 #include "BleConnectionStatus.h"
 #include "BLEHIDDevice.h"
